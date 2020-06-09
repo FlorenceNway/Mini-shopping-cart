@@ -48,16 +48,36 @@ const App = () => {
 
   const updateCart = (index, id, value) => {
     console.log(index, id, value)
+
+    const updatedCart = cart.map((el) => {
+      if (el.id == id) el.quantity = value;
+      return el;
+    });
+
+    setCart(updatedCart);
+
+  }
+
+  const deleteItem = (el) => {
+
+    const updatedCart = cart.filter((item) => {
+      return item.id != el.id
+    });
+
+    setCart(updatedCart);
+
+    console.log(updatedCart);
+
   }
 
   return (
     <div className="app">
-      
+
       <h3>Store</h3>
       <Store stock={stock} addToCart={addToCart} />
 
       <h3>Cart</h3>
-      <Cart cart={cart} updateCart={updateCart}/>
+      <Cart cart={cart} updateCart={updateCart} deleteItem={deleteItem} />
 
     </div>
   );

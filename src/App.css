@@ -1,0 +1,49 @@
+.app {
+    max-width: 30em;
+    margin: 10% auto;
+    padding: 1em;
+    border: grey solid 1px;
+    background: white;
+    border-radius: 40px;
+}
+
+ul > li > span {
+    width: 6em;
+    display: inline-block;
+}
+ul > li > input {
+    width: 6em;
+    text-align: center;
+    border: grey solid 1px;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    padding: 5px;
+    border: 1px solid;
+    margin: 15px auto;
+}
+
+button {
+    background-color: #b53f6bd4;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: floralwhite;
+    cursor: pointer;
+}
+.delBtn{
+    background-color: #d21818;
+    color: floralwhite;
+    border: 2px solid floralwhite;
+}
+
+button[disabled] {
+    background: #808080bd;
+}
+
+.disable {
+    background: #808080bd;
+}

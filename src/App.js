@@ -34,7 +34,11 @@ const App = () => {
   const addToCart = (index, id, value) => {
     const localStock = [...stock];
     const localCart = [...cart];
-    localStock[index].quantity -= value;
+
+    if(value <= localStock[index].quantity && value !== 0) {
+      localStock[index].quantity -= value;
+    
+
     const itemIndexInCart = localCart.findIndex((item) => item.id === id);
 
     if (itemIndexInCart !== -1) {
@@ -44,6 +48,7 @@ const App = () => {
     }
     setCart(localCart);
     setStock(localStock);
+    }
   };
 
 

@@ -4,10 +4,10 @@ const Item = ({item, addToCart, index}) => {
   const [value, setValue] = useState(0);
   const [disable, setDisable] = useState("")
 
-  const onChangeHandler = (event) => {
-    setValue(event.target.value)
-    
-    if(value !== 0 && value < item.quantity) {
+  const onChangeHandler = (e) => {
+    setValue(e.target.value)
+
+    if(e.target.value !== 0 && e.target.value > item.quantity) {
       setDisable("disable")
     }else {
       setDisable("")
@@ -18,7 +18,6 @@ const Item = ({item, addToCart, index}) => {
     if(value !== 0 && value <= item.quantity) {
       addToCart(index, item.id, parseInt(value))
     }
-  
     setValue(0);
   }
 
@@ -32,9 +31,10 @@ const Item = ({item, addToCart, index}) => {
         max={item.quantity}
         onChange={onChangeHandler}
       />
-      <button onClick={submitHandler} className={disable} disable={disable}>
+      <button onClick={submitHandler} className={disable}  disabled={disable}>
         Add to Cart
       </button>
+      <span className='inStock label'>{item.quantity === 0? "Out of Stock": `In stock: ${item.quantity}`}</span>
     </li>
   );
 };

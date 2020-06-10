@@ -1,14 +1,17 @@
-import React, {useState} from "react";
+import React, {useState,useEffect} from "react";
 
-const Item = ({item, updateCart, index}) => {
+const Item = ({item, updateCart, deleteItem, index}) => {
   const [value, setValue] = useState(item.quantity);
 
+  useEffect(() => {
+    setValue(item.quantity)
+  },[item.quantity])
+
   const onChangeHandler = (event) => {
-    setValue(event.target.value)
+    setValue(parseInt(event.target.value))
   }
 
   const submitHandler = () => {
-    setValue(item.quantity)
     updateCart(index, item.id, parseInt(value));
   }
 
@@ -22,10 +25,10 @@ const Item = ({item, updateCart, index}) => {
               max={item.quantity}
               onChange={onChangeHandler}
             />
-            <button onClick={submitHandler}>
+            <button onClick={submitHandler} className='update'>
               Update
             </button>
-            <button className="delBtn">
+            <button className="delBtn delete" onClick={() => deleteItem(item)}>
               Delete
             </button>
           </li>

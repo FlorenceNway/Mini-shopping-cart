@@ -20,10 +20,10 @@ ul > li > input {
 li {
     list-style-type: none;
     display: flex;
-    width: 80%;
+    width: 85%;
     justify-content: space-around;
-    padding: 5px;
-    border: 1px solid;
+    padding: 10px;
+    border: 1px solid grey;
     margin: 15px auto;
 }
 
@@ -46,4 +46,8 @@ button[disabled] {
 
 .disable {
     background: #808080bd;
+}
+
+.inStock {
+    color: red;
 }

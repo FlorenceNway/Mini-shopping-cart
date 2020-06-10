@@ -91,11 +91,11 @@ describe("Item", () => {
 			quantity: 20,
 		};
 
-		const updateCart = jest.fn();
-		const { container } = render(<Item item={item} updateCart={updateCart} />);
+		const deleteItem = jest.fn();
+		const { container } = render(<Item item={item} deleteItem={deleteItem} />);
 
 		fireEvent.click(container.querySelector(".delete"));
 
-		expect(updateCart).toHaveBeenCalledTimes(1);
+		expect(deleteItem).toHaveBeenCalledTimes(1);
 	});
 });

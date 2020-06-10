@@ -1,5 +1,5 @@
-# Simple Shopping Cart
-Reat Hooks
+# Mini Shopping Cart
+React Hooks
 
 ## Features
 

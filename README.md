@@ -1,8 +1,7 @@
-# Simple Cart
+# Simple Shopping Cart
+Reat Hooks
 
-To view a demo in your browser, run `npm run serve` and go to [http://localhost:5000](http://localhost:5000).
-
-## Instructions
+## Features
 
 The user is presented with a list of items, each with a field for quantity and a button to add to cart.
 
@@ -26,16 +25,17 @@ App
 
 ## State
 
-Your App component should store the state of the store and the cart.
+App component store the state of the store and the cart.
 
-In the App component, you should define 2 functions (you may break them down into more): `addToCart` and `updateItemInCart`. These functions should recieve the parameters: `selectedItem` and `quantity`.
+In the App component, 
+ `addToCart` and `updateItemInCart`. These functions recieve the parameters: `selectedItem` and `quantity`.
 
-In the function, you'll update the state of `store` and `cart` with the new quantity of the selected item.
+In the function, to update the state of `store` and `cart` with the new quantity of the selected item.
 
 If the quantity of the item in the cart is 0, completely remove that item from the cart.
 
 ## Props
 
-Your Store component should receive the props: `store` and `addToCart`.
+Store component is to receive the props: `store` and `addToCart`.
 
-Your Cart component should receive the props: `cart` and `updateItem`.
+Cart component is to receive the props: `cart` and `updateItem`.

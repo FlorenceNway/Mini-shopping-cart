@@ -16,9 +16,7 @@ const Item = ({item, addToCart, index}) => {
   }
 
   const submitHandler = () => {
-    
-      addToCart(index, item.id, parseInt(value))
-    
+    addToCart(index, item.id, parseInt(value))
     setValue(0);
   }
 
@@ -36,7 +34,6 @@ const Item = ({item, addToCart, index}) => {
             min={0}
             max={item.quantity}
             onChange={onChangeHandler}
-            className="qtyInput"
           />
         </div>
         <div className={'buttonInstock'}>

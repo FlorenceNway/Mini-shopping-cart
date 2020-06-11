@@ -22,7 +22,10 @@ const Item = ({item, addToCart, index}) => {
   }
 
   return (
-    <li>
+    <li className="storeItem">
+      <div className="imgWrapper">
+        <img src={item.img_url} width={200} height={200}></img>
+      </div> 
       <span>{item.name}</span>
       <input
         type="number"

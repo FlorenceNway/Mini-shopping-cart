@@ -1,6 +1,6 @@
 .app {
-    max-width: 80%;
-    margin: 10% auto;
+    max-width: 65%;
+    margin: 3% auto;
     padding: 1em;
     border: grey solid 1px;
     background: white;
@@ -25,7 +25,8 @@ li {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
-    border: 1px solid grey;
+    border: 1px solid #bd910c;
+    border-radius: 4px;
     margin: 15px auto;
 }
 
@@ -38,8 +39,14 @@ img {
     display: flex;
     flex-direction: column;
 }
+.heading {
+    text-align: center;
+    color: #bd910c;
+    font-family: cursive;
+    font-size: 2em;
+}
 
-.storeItem {
+.cartItem {
 
 }
 .storeItems {
@@ -51,10 +58,12 @@ img {
 button {
     background-color: #b53f6bd4;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 12px 10px;
     color: floralwhite;
     cursor: pointer;
+    display: inline;
 }
+
 .delBtn{
     background-color: #d21818;
     color: floralwhite;
@@ -72,3 +81,17 @@ button[disabled] {
 .inStock {
     color: red;
 }
+
+.nameInput, .buttonInstock {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 5px;
+}
+.qtyInput {
+    width: 35px;
+    border: 1px solid pink;
+    border-radius: 5px;
+    text-align: center;
+}
+
+ 

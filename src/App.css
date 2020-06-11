@@ -1,5 +1,5 @@
 .app {
-    max-width: 30em;
+    max-width: 80%;
     margin: 10% auto;
     padding: 1em;
     border: grey solid 1px;
@@ -20,11 +20,22 @@ ul > li > input {
 li {
     list-style-type: none;
     display: flex;
-    width: 85%;
+    flex-direction: column;
+    width: 30%;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
     border: 1px solid grey;
     margin: 15px auto;
+}
+
+.storeItem {
+
+}
+.storeItems {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
 button {

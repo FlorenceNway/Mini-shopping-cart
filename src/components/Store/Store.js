@@ -5,7 +5,7 @@ const Store = ({ stock, addToCart }) => {
   return (
     <>
     <h3>Store</h3>
-    <ul>
+    <ul className='storeItems'>
       {stock.map((item, index) => (
         <Item key={index} item={item} addToCart={addToCart} index={index}/>
       ))}

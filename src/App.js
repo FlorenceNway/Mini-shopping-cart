@@ -9,13 +9,8 @@ const initialStock = [
     id: 1,
     name: "Butter",
     quantity: 20,
-    img_url:"https://gbc-cdn-public-media.azureedge.net/img14494.768x512.jpg"
-  },
-  {
-    id: 2,
-    name: "Apples",
-    quantity: 5,
-    img_url:"https://gbc-cdn-public-media.azureedge.net/img14494.768x512.jpg"
+    img_url:"https://grasslandbeef.com/content/images/thumbs/0001439.jpeg"
+    //img_url:"https://www.rd.com/wp-content/uploads/2016/12/03-Butter-Hacks-You-Didnt-Know_unsalted_489611438_Marrypopins.jpg"
   },
   {
     id: 3,
@@ -27,7 +22,13 @@ const initialStock = [
     id: 4,
     name: "Soap",
     quantity: 2,
-    img_url:"https://gbc-cdn-public-media.azureedge.net/img14494.768x512.jpg"
+    img_url:"http://en.bcdn.biz/images/emails_source/030d8c1c-0a46-4d37-a3ca-17c03de904ce.jpg"
+  },
+  {
+    id: 2,
+    name: "Apples",
+    quantity: 5,
+    img_url:"https://commonsensehealth.com/wp-content/uploads/2013/07/apples.jpg"
   },
 ];
 

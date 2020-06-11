@@ -9,21 +9,25 @@ const initialStock = [
     id: 1,
     name: "Butter",
     quantity: 20,
+    img_url:"https://gbc-cdn-public-media.azureedge.net/img14494.768x512.jpg"
   },
   {
     id: 2,
     name: "Apples",
     quantity: 5,
+    img_url:"https://gbc-cdn-public-media.azureedge.net/img14494.768x512.jpg"
   },
   {
     id: 3,
     name: "Salmon",
     quantity: 13,
+    img_url:"https://gbc-cdn-public-media.azureedge.net/img14494.768x512.jpg"
   },
   {
     id: 4,
     name: "Soap",
     quantity: 2,
+    img_url:"https://gbc-cdn-public-media.azureedge.net/img14494.768x512.jpg"
   },
 ];
 

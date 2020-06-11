@@ -16,7 +16,7 @@ const Item = ({item, updateCart, deleteItem, index}) => {
   }
 
   return (
-          <li>
+          <li className='cartItem'>
             <span>{item.name}</span>
             <input
               type="number"

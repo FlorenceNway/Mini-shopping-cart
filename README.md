@@ -1,6 +1,9 @@
 # Mini Shopping Cart
 React Hooks
 
+# To run
+npm start
+
 ## Features
 
 The user is presented with a list of items, each with a field for quantity and a button to add to cart.
@@ -25,12 +28,12 @@ App
 
 ## State
 
-App component store the state of the store and the cart.
+App component stores the state of the store and the cart.
 
 In the App component, 
  `addToCart` and `updateItemInCart`. These functions recieve the parameters: `selectedItem` and `quantity`.
 
-In the function, to update the state of `store` and `cart` with the new quantity of the selected item.
+In the function, update the state of `store` and `cart` with the new quantity of the selected item.
 
 If the quantity of the item in the cart is 0, completely remove that item from the cart.
 
